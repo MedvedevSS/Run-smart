@@ -50,7 +50,7 @@ $(document).ready(function(){
         })
     });
 
-    function validateForms(form){
+    function validateForms(form) {
         $(form).validate({
             rules: {
                 name: {
@@ -64,7 +64,7 @@ $(document).ready(function(){
                 }
             },
             messages: {
-                name {
+                name: {
                 required: "Пожалуйста, введите свое имя",
                 minlength: jQuery.validator.format("Введите {0} символа!")
               },
@@ -114,4 +114,6 @@ $(document).ready(function(){
         $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
         return false;
     });
+
+    new WOW().init();
 });
