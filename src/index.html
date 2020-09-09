@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <section class="promo">
+    <section id="up" class="promo">
       <div class="container">
         <header class="header">
           <a href="#" class="header__logo">
@@ -58,7 +58,7 @@
         <h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
         <div class="advantages__wrapper">
           <div class="advantages__item">
-            <img src="icons/advantages/cup.png" alt="" class="icon" />
+            <img src="icons/advantages/cup.png" alt="" class="advantages__icon" />
             <h3 class="advantages__subtitle">Делимся опытом</h3>
             <div class="advantages__descr">
               Наши сотрудники всегда готовы поделиться своим опытом,<br />
@@ -67,7 +67,7 @@
             </div>
           </div>
           <div class="advantages__item">
-            <img src="icons/advantages/heart.png" alt="" class="icon" />
+            <img src="icons/advantages/heart.png" alt="heart" class="advantages__icon advantages__icon_animated" />
             <h3 class="advantages__subtitle">Заботимся о здоровье</h3>
             <div class="advantages__descr">
               Мы работаем для того,<br />
@@ -76,7 +76,7 @@
             </div>
           </div>
           <div class="advantages__item">
-            <img src="icons/advantages/shoe.png" alt="" class="icon" />
+            <img src="icons/advantages/shoe.png" alt="" class="advantages__icon" />
             <h3 class="advantages__subtitle">Учим бегать</h3>
             <div class="advantages__descr">
               Помогаем с обучением<br />
@@ -391,9 +391,9 @@
         <div class="modal__subtitle">Просто заполните форму заявки</div>
         <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
         <form class="feed-form feed-form_mt25" action="#">
-          <input name="name" required placeholder="Ваше имя" type="text" />
-          <input name="phone" required placeholder="Ваш телефон"/>
-          <input name="email" required placeholder="Ваш E-mail" type="email" />
+          <input name="name"  placeholder="Ваше имя" type="text" />
+          <input name="phone" placeholder="Ваш телефон"/>
+          <input name="email" placeholder="Ваш E-mail" type="email" />
           <button class="button button_submit">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
         </form>
       </div>
@@ -418,6 +418,11 @@
       </div>
     </div>
     
+    <a href="#up" class="pageup">
+    <img src="icons/chevron-circle-up-solid.svg" alt="up">
+    </a>
+
+
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
